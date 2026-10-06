@@ -1,0 +1,65 @@
+<!-- <input [(ngModel)]="username"> -->
+ <!-- @if (isLoggedIn) {
+    <h1>Welcome {{username}}</h1>
+ }
+ @else {
+    <h1>Please Login</h1>
+ }
+ <h1>{{title}}</h1>
+ @for (todo of todos; track todo.id) {
+   <p>{{todo.title}}</p>
+ }
+ @switch (role) {
+   @case ("Admin") {
+      <h2>Welcome Admin</h2>
+   }
+   @case ("Manager") {
+      <h2>Welcome Manager</h2>
+   }
+   @default {
+      <h2>Welcome User</h2>
+   }
+ }
+
+<p [ngClass]="isCompleted ? 'completed' : 'pending'">Learn Angular</p>
+<p [ngStyle]="{'color': isCompleted ? 'green' : 'red'}">Learn Angular</p> -->
+
+<!-- <p>Welcome {{username}}</p> -->
+
+<!-- <h1>Welcome {{username}}</h1>
+<button 
+[disabled]="isDisabled"
+(click)="showMessage()">
+Add Todo
+</button>
+<p>{{message}}</p>
+<br><br>
+<a [href]="website" target="_blank">Angular Official Website</a> -->
+
+
+
+
+<h1>{{title}}</h1>
+<hr>
+<h2>Todo List</h2>
+
+
+@for (todo of todos; track todo.id) {
+   <div>
+   <h3>{{todo.title}}</h3>
+   <p>{{todo.description}}</p>
+   <p>Status : @if (todo.isCompleted){
+      <span>Completed</span>
+      }
+      @else {
+         <span>Pending</span>
+      }
+   </p>
+   <hr>  
+   </div>
+}
+
+
+
+
+<hr>
